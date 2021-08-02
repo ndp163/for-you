@@ -19,8 +19,7 @@ $('document').ready(function(){
 
 	
 	$('#turn_on').click(function(){
-		var audio = $('.song')[0];
-        audio.play();
+		document.querySelector("audio").play();
 		$(".bulb").fadeIn(5000);
 		$('#bulb_yellow').addClass('bulb-glow-yellow');
 		$('#bulb_red').addClass('bulb-glow-red');
