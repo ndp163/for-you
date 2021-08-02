@@ -19,6 +19,8 @@ $('document').ready(function(){
 
 	
 	$('#turn_on').click(function(){
+		var audio = $('.song')[0];
+        audio.play();
 		$(".bulb").fadeIn(5000);
 		$('#bulb_yellow').addClass('bulb-glow-yellow');
 		$('#bulb_red').addClass('bulb-glow-red');
@@ -28,8 +30,7 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
 
-		var audio = $('.song')[0];
-        audio.play();
+		
         $('#bulb_yellow').addClass('bulb-glow-yellow-after');
 		$('#bulb_red').addClass('bulb-glow-red-after');
 		$('#bulb_blue').addClass('bulb-glow-blue-after');
